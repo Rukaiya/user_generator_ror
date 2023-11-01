@@ -1,5 +1,9 @@
-<h1>Upload Excel File to Create User</h1>
-<%= form_tag({ action: 'upload_excel' }, multipart: true) do %>
-  <%= file_field_tag :excel_file %>
-  <%= submit_tag 'Upload' %>
-<% end %>
+<h1>User Creator</h1>
+<hr>
+<div class="form">
+  <%= form_tag({ action: 'upload_excel' }, multipart: true) do %>
+    <%= file_field_tag :excel_file, class: 'custom-file-input' %>
+    <%= submit_tag 'Upload', class: 'custom-button' %>
+  <% end %>
+</div>
+

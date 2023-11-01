@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UserGenerator</title>
+    <title>User Generator</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "styles", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <%= yield %>
-    <% flash.each do |type, message| %>
-      <div class="alert alert-<%= type %>"><%= message.html_safe %></div>
-    <% end %>
+    <div class="error-message">
+      <% flash.each do |type, message| %>
+        <div class="alert alert-<%= type %>"><%= message.html_safe %></div>
+      <% end %>
+    </div>
   </body>
 </html>

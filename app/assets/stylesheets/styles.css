@@ -1,0 +1,62 @@
+:root{
+    --primary-background-color: #DADADA;
+    --secondary-color: cadetblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    background: var(--secondary-color);
+}
+
+h1{
+    text-align: center;
+    line-height: 7rem;
+}
+
+.form{
+    width: 30vw;
+    height: 15vh;
+    background: #999999;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-file-input {
+    width: 20vw;
+    border: 1px solid var(--primary-background-color);
+    padding: 10px;
+}
+
+.custom-button {
+    display: block;
+    width: 20vw;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 1px solid var(--primary-background-color);
+    background: transparent;
+    margin-top: 25px;
+    opacity: 1;
+}
+
+.error-message{
+    margin-top: 5vh;
+    border: 1px solid var(--primary-background-color);
+    width: 40vw;
+    height: auto;
+    line-height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
