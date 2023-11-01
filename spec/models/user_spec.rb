@@ -11,5 +11,18 @@ RSpec.describe User, type: :model do
     expect(user).to_not be_valid
   end
 
-  # Add more test cases as needed
+  it "is not valid without a last name" do
+    user = User.new(first_name: "Doe", email: "john.doe@example.com")
+    expect(user).to_not be_valid
+  end
+
+  it "is not valid without an email" do
+    user = User.new(first_name: "Doe", last_name: "Doe")
+    expect(user).to_not be_valid
+  end
+
+  it "is not a valid email format" do
+    user = User.new(first_name: "Doe", last_name: "Doe", email: "john.doe.com")
+    expect(user).to_not be_valid
+  end
 end
