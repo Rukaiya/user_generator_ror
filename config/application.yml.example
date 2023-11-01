@@ -1,0 +1,4 @@
+development:
+  DATABASE_NAME: user_generator_ror_development
+  DATABASE_USER_NAME: DATABASE_USER_NAME
+  DATABASE_PASSWORD: DATABASE_PASSWORD
