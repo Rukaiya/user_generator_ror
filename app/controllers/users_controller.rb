@@ -39,7 +39,7 @@ class UsersController < ApplicationController
       end
 
       flash[:notice] = "Total Users: #{total_count}, Successfully Added: #{success_count}, Failed: #{failure_count}"
-      flash[:failure_reasons] = failure_reasons.join('<br>')
+      flash[:failure_reasons] = failure_reasons.join('<br>').html_safe
       redirect_to root_path
     else
       flash[:alert] = 'Please upload an Excel file.'
