@@ -52,11 +52,36 @@ h1{
 }
 
 .error-message{
-    margin-top: 5vh;
-    border: 1px solid var(--primary-background-color);
+    margin-top: 2vh;
+    /*border: 1px solid var(--primary-background-color);*/
     width: 40vw;
     height: auto;
     line-height: 2rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+}
+
+.alert-notice {
+    border: 2px solid green;
+    background: darkseagreen;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.alert-alert {
+    border: 2px solid #1a0d00;
+    background: #ffc180;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    color: #1a0d00;
+}
+
+.alert-failure_reasons {
+    border: 2px solid darkred;
+    background: var(--primary-background-color);
 }
